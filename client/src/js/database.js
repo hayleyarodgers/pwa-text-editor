@@ -26,7 +26,8 @@ export const putDb = async (content) => {
 	const store = tx.objectStore("jate");
 
 	// Use the .put() method to update data in the database.
-	const request = store.put({ content: content });
+	// The text editor consists of one field of information that is repeatedly retrieved and updated.
+	const request = store.put({ id: 1, value: content });
 
 	// Get confirmation of the request.
 	const result = await request;
@@ -46,13 +47,16 @@ export const getDb = async () => {
 	// Open up the desired object store.
 	const store = tx.objectStore("jate");
 
-	// Use the .getAll() method to get all data in the database.
-	const request = store.getAll();
+	// Use the .get() method to get the one text editor entry from the database.
+	const request = store.get(1);
 
 	// Get confirmation of the request.
 	const result = await request;
-	console.log("🚀 - data retrieved from the database", result);
-	return result;
+	// If there is a text editor entry, return it.
+	result
+		? console.log("🚀 - data retrieved from the database", result.value)
+		: console.log("🚀 - data not found in the database");
+	return result?.value;
 };
 
 initdb();
