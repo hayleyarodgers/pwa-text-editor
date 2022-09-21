@@ -23,10 +23,9 @@ SO THAT I can reliably retrieve them for later use.
 ### Tools and Technologies Used
 
 To create this application, I used used:
-- idb
-- IndexedDB
-- Webpack
-- Workbox
+- IndexedDB and idb as a database
+- Webpack to bundle front-end code
+- Workbox to create a service worker that caches static assets
 - And, Heroku.
 
 ### Screenshot of Application
