@@ -11,7 +11,10 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "client": "cd client && npm start"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayleyarodgers/pwa-text-editor.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
