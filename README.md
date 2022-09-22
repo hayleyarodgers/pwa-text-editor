@@ -40,7 +40,7 @@ The repository where the code is saved is on Github. To access it, click [here](
 
 ### Live Application
 
-My application is deployed on Heroku. To access it, click [here]().
+My application is deployed on Heroku. To access it, click [here](https://hayleyarodgers-pwa-text-editor.herokuapp.com/).
 
 ## Installation
 
@@ -59,7 +59,7 @@ To use the application from the command line (after installing dependencies):
 4. Go to the port on your local host.
 5. Click the "Install" button.
 
-Alternatively, to use the live application, click [here]().
+Alternatively, to use the live application, click [here](https://hayleyarodgers-pwa-text-editor.herokuapp.com/).
 
 ## Credits
 
